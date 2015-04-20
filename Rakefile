@@ -11,6 +11,7 @@ RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
 end
 
+desc 'Run all specs and features'
 task :test => ['spec', 'features']
 
 task :default => :test
