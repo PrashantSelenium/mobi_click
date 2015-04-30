@@ -12,4 +12,4 @@
 *.o
 *.a
 mkmf.log
-sample_app/.DS_Store
+/sample_app/.DS_Store
