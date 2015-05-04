@@ -1,7 +1,8 @@
-<%
-std_opts = "--no-source --color --format pretty" # Cucumber::Formatter::Fuubar"
-%>
+<% std_opts = "--no-source --color --format pretty" # Cucumber::Formatter::Fuubar"%>
+<%appium_opts_iphone_simulator= "--no-source --color --format pretty PLATFORMNAME=ios DEVICENAME='iPhone Simulator' APP='sample_app/UICatalog.app'" # Cucumber::Formatter::Fuubar"%>
+<%sauce= "username='username'" %>
 
-default: <%= std_opts %>
+
+default: <%= appium_opts_iphone_simulator %>
 focus: <%= std_opts %> --tags @focus
 
