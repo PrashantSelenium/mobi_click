@@ -11,5 +11,6 @@
 *.so
 *.o
 *.a
+*.idea
 mkmf.log
 /sample_app/.DS_Store
