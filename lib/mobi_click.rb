@@ -1,10 +1,24 @@
-require "mobi_click/version"
-require "mobi_click/load_driver"
+require "mobi_click/require_all"
 
 module MobiClick
   # Your code goes here...
-  def self.included(cls)
+  include LoadPlatform
 
+
+
+
+  def initialize
 
   end
+
+  def self.included(cls)
+    cls.extend MobiClick::Accessors
+  end
+
+
+  def self.platform
+    LoadPlatform.get_platform
+  end
+
 end
+
