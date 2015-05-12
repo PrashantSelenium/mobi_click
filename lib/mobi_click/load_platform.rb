@@ -7,7 +7,6 @@ module MobiClick
     def self.load_platform(hash,caps)
       Adapter.set(:tool,hash[:tool])
       set_platform
-      puts "platform set #{@@platform}"
       register_platform(caps)
     end
 
@@ -16,7 +15,6 @@ module MobiClick
     end
 
     def self.set_platform
-      puts 'inside LoadPlatform::set_platform'
       begin
         @@platform=Object.const_get("MobiClick::#{tool}")
       rescue
@@ -25,7 +23,6 @@ module MobiClick
     end
 
    def self.get_platform
-     puts @@platform
      @@platform
    end
 

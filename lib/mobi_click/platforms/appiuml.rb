@@ -1,4 +1,4 @@
-require 'appium_lib'
+#require 'appium_lib'
 
 module MobiClick
   module AppiumL

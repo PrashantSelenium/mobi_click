@@ -1,17 +1,13 @@
 module MobiClick
   module Accessors
 
-
-    def text(name)
-
+    def text(name,identifier={:index => 0})
       define_method("#{name}") do
-        puts "Actual : #{MobiClick.platform.driver.find_element(:name,'UICatalog').text()} -- Expected : 'UICatalog'"
+        MobiClick.platform::Element.text identifier
       end
 
       define_method("#{name}?") do
-        puts 'test name?'
       end
-
     end
 
   end

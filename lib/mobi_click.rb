@@ -20,5 +20,13 @@ module MobiClick
     LoadPlatform.get_platform
   end
 
+  def self.start
+    platform.start
+  end
+
+  def self.quit
+    platform.quit
+  end
+
 end
 
