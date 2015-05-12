@@ -21,22 +21,13 @@ tools ={
  tools
 end
 
-
-
 Before do
   MobiClick::LoadPlatform.load_platform(mobiclick_caps, desired_capabilities)
-  set_driver
-end
-
-def set_driver
-  @driver=MobiClick.platform.start
-end
-
-def driver
-  @driver
+  MobiClick.start
+  #set_driver
 end
 
 After do
-  MobiClick::AppiumL.quit
+  MobiClick.quit
 end
 

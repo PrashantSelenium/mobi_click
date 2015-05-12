@@ -1,7 +1,7 @@
 class MainScreen
   include MobiClick
 
-  text(:uicatalog)
+  text(:uicatalog,:name =>'UICatalog')
 
   def get_UICatalog_text
     uicatalog
