@@ -1,7 +1,6 @@
 module MobiClick
   module AppiumL
     module Element
-
       attr_accessor :identifier
       def self.driver
         MobiClick::AppiumL.driver
@@ -15,9 +14,7 @@ module MobiClick
         hash.each { |key, value| ":#{key.to_sym},'#{value}'" }
       end
 
-      def self.text (identifier)
-        element(identifier).text()
-      end
     end
+    include Element
   end
 end
