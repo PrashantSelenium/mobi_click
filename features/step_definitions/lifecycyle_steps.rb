@@ -5,4 +5,8 @@ end
 Then(/^the application should be running\.$/) do
   ms=MainScreen.new
   puts ms.get_UICatalog_text
+  puts ms.verify_UICatalog
+  ms.click_UICatalog
+  sleep 5
+
 end
