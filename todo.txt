@@ -1,0 +1,16 @@
+click dynamic text - inprogress
+verify if dynamic text exists- inprogress
+table rows and columns- inprogress
+text_field methods- inprogress
+button methods- inprogress
+collection methods- inprogress
+view methods- inprogress
+swipe- inprogress
+scroll- inprogress
+implement remaining methods from UI catalog
+functional tests - inprogress
+android app tests
+
+page navigation - Cheezy
+unit tests
+CI/CD
