@@ -1,8 +1,8 @@
+code documentation
 click dynamic text - inprogress
 verify if dynamic text exists- inprogress
 table rows and columns- inprogress
-text_field methods- inprogress
-button methods- inprogress
+text_field methods- testing pending .... need to add some code to app to get this working
 collection methods- inprogress
 view methods- inprogress
 swipe- inprogress

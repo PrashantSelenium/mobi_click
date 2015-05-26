@@ -1,4 +1,4 @@
-#require 'appium_lib'
+require 'appium_lib'
 
 module MobiClick
   module AppiumL
@@ -15,18 +15,20 @@ module MobiClick
       @@driver.start_driver
     end
 
+    def self.quit
+      @@driver.driver_quit
+    end
+
     def self.driver
       @@driver
     end
 
-    def self.quit
-      @@driver.driver_quit
-    end
   end
 
   class Driver
     def initialize_driver(caps)
       puts "driver initialized"
+      puts caps
       return Appium::Driver.new(caps)
     end
   end
@@ -34,3 +36,4 @@ module MobiClick
 
 end
 
+# Implement interface

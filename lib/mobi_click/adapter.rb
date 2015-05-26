@@ -1,5 +1,3 @@
-
-
 module MobiClick
   module Adapter
     @@tools ||={}

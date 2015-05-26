@@ -15,14 +15,16 @@ tools ={
     :tool=> "AppiumL",
     'caps'=> {
         'test_on'=>'app',
-        'browser'=>'none'
+        'browser'=>'none',
+
     }
 }
  tools
 end
 
+
 Before do
-  MobiClick::LoadPlatform.load_platform(mobiclick_caps, desired_capabilities)
+  MobiClick::LoadPlatform.load_platform(mobiclick_caps,desired_capabilities)
   MobiClick.start
   #set_driver
 end

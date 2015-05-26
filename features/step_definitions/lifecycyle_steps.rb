@@ -1,3 +1,6 @@
+include MobiClick
+
+
 When(/^I start the server$/) do
   #pending # Write code here that turns the phrase above into concrete actions
 end
@@ -7,6 +10,13 @@ Then(/^the application should be running\.$/) do
   puts ms.get_UICatalog_text
   puts ms.verify_UICatalog
   ms.click_UICatalog
-  sleep 5
+  #sleep 5
+  MobiClick.scrollto
+  #sleep 5
+  #ms.click_on_textfieldtext
+  #puts ms.verify_Defaulttextfield
+  #ms.click_Defaulttextfield
+  #ms.set_Defaulttextfield
+  #puts ms.get_Defaulttextfield_value
 
 end

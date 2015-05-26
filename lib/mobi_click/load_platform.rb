@@ -4,8 +4,10 @@ module MobiClick
   module LoadPlatform
    @@platform=nil
 
-    def self.load_platform(hash,caps)
-      Adapter.set(:tool,hash[:tool])
+    def self.load_platform(mobiclick_caps={},caps)
+      mobiclick_caps or raise "Mobiclick capabilities must be provided"
+      caps or raise "Tool Specific capabilities must be provided"
+      Adapter.set(:tool,Capabilities.new(mobiclick_caps).tool)
       set_platform
       register_platform(caps)
     end

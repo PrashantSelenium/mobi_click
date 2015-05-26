@@ -28,5 +28,12 @@ module MobiClick
     platform.quit
   end
 
+
+  def self.scrollto
+    ele=platform.driver.find_element(:name,'Steppers')
+    platform.driver.execute_script "mobile: scroll", :direction => 'down', :element => ele.ref
+
+  end
+
 end
 
