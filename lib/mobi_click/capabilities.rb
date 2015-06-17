@@ -19,6 +19,10 @@ module MobiClick
       @mobi_caps.fetch('caps').fetch('browser')
     end
 
+    def os
+      @mobi_caps.fetch('caps').fetch('os')
+    end
+
   end
 end
 
