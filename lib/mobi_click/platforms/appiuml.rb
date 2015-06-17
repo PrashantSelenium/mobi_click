@@ -23,6 +23,14 @@ module MobiClick
       @@driver
     end
 
+    def self.scroll_to(hash)
+      MobiClick::AppiumL::Generic.scroll_to(hash)
+    end
+
+    def self.swipe(opts)
+      MobiClick::AppiumL::Generic.swipe(opts)
+    end
+
   end
 
   class Driver
