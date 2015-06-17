@@ -6,11 +6,12 @@ text_field methods- testing pending .... need to add some code to app to get thi
 collection methods- inprogress
 view methods- inprogress
 swipe- inprogress
-scroll- inprogress
+radiobutton
+checkbox
 implement remaining methods from UI catalog
 functional tests - inprogress
 android app tests
 
-page navigation - Cheezy
+page navigation
 unit tests
 CI/CD
