@@ -3,7 +3,9 @@ class MainScreen
 
   text(:uicatalog,:name =>'UICatalog')
   text(:textfield,:name=>'Text Fields')
+  text(:sliders,:name=>'Sliders')
   text_field(:default_text,:xpath=>'//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]/UIATextField[1]')
+
 
 
   def get_UICatalog_text
@@ -38,4 +40,7 @@ class MainScreen
     textfield
   end
 
+  def click_sliders
+    sliders
+  end
 end

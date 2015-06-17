@@ -16,7 +16,7 @@ tools ={
     'caps'=> {
         'test_on'=>'app',
         'browser'=>'none',
-
+        'os'=>'ios'
     }
 }
  tools

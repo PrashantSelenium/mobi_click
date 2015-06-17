@@ -11,7 +11,16 @@ Then(/^the application should be running\.$/) do
   puts ms.verify_UICatalog
   ms.click_UICatalog
   #sleep 5
-  MobiClick.scrollto
+  MobiClick.scroll_to({:name=>'Steppers',:direction=>'down'})
+  #sleep 10
+  ms.click_UICatalog
+#sleep 10
+  ms.click_sliders
+  #sleep 10
+MobiClick.swipe("sdf")
+  #sleep 10
+
+
   #sleep 5
   #ms.click_on_textfieldtext
   #puts ms.verify_Defaulttextfield
