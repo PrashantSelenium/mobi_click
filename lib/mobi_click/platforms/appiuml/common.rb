@@ -3,7 +3,7 @@ module MobiClick
     module Common
 
       def self.click (identifier)
-        MobiClick::AppiumL::Element.element(identifier).click
+       MobiClick::AppiumL::Element.element(identifier).click
       end
 
       def self.exists? (identifier)
