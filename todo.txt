@@ -1,3 +1,7 @@
+no failure if object not present
+radiobutton
+checkbox
+
 code documentation
 click dynamic text - inprogress
 verify if dynamic text exists- inprogress
@@ -6,11 +10,12 @@ text_field methods- testing pending .... need to add some code to app to get thi
 collection methods- inprogress
 view methods- inprogress
 swipe- inprogress
-radiobutton
-checkbox
+add scroll_to methods
+
 implement remaining methods from UI catalog
 functional tests - inprogress
 android app tests
+
 
 page navigation
 unit tests
