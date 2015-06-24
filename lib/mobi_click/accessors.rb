@@ -47,7 +47,6 @@ module MobiClick
       end
     end
 
-
     #
     # adds two methods to the MobiClick
     # 1. click the image
@@ -63,10 +62,13 @@ module MobiClick
     # methods declared in common_methods are generic method call that could be used for all the api methods
     def common_methods(name,identifier)
       define_method("#{name}") do
-        MobiClick.platform::Common.send('click', identifier)
+        MobiClick.platform::Common.send('tap', identifier)
       end
       define_method("#{name}?") do
         MobiClick.platform::Common.send('exists?', identifier)
+      end
+      define_method("#{name}_element") do
+        MobiClick.platform::Common.send('_element', identifier)
       end
 
     end

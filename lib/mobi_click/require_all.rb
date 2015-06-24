@@ -10,6 +10,7 @@ require "mobi_click/platforms/appiuml/text_field"
 require "mobi_click/platforms/appiuml/button"
 require "mobi_click/platforms/appiuml/table"
 require "mobi_click/platforms/appiuml/generic"
+require "mobi_click/dynamic_methods"
 
 
 

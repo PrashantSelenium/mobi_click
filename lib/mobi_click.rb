@@ -3,6 +3,7 @@ require "mobi_click/require_all"
 module MobiClick
   # Your code goes here...
   include LoadPlatform
+  include DynamicMethods
 
 
 
