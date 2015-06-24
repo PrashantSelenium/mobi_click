@@ -1,22 +1,28 @@
 no failure if object not present
-radiobutton
-checkbox
+
+app for checkbox methods
+app for text field methods
+
+table rows and columns- inprogress
+add scroll_to methods
 
 code documentation
 click dynamic text - inprogress
 verify if dynamic text exists- inprogress
-table rows and columns- inprogress
-text_field methods- testing pending .... need to add some code to app to get this working
 collection methods- inprogress
 view methods- inprogress
-swipe- inprogress
-add scroll_to methods
+swipe- testing pending
 
 implement remaining methods from UI catalog
 functional tests - inprogress
 android app tests
+add specs
 
-
+CHEEZY
 page navigation
 unit tests
 CI/CD
+start appium server methods
+
+FUTURE
+dynamic methods with DSL
