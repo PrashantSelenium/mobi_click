@@ -16,6 +16,13 @@ class MainScreen
     uicatalog
   end
 
+  def click_UICatalog_element
+    #uicatalog_element.click
+    #text(:uicatalog,:name =>'UICatalog')
+   # test_method
+    button_element(:uicatalog,:name =>'UICatalog').click
+  end
+
   def verify_UICatalog
     uicatalog?
   end

@@ -9,7 +9,8 @@ Then(/^the application should be running\.$/) do
   ms=MainScreen.new
   puts ms.get_UICatalog_text
   puts ms.verify_UICatalog
-  ms.click_UICatalog
+  ms.click_UICatalog_element
+  #ms.click_UICatalog
   #sleep 5
   MobiClick.scroll_to({:name=>'Steppers',:direction=>'down'})
   #sleep 10
@@ -17,7 +18,7 @@ Then(/^the application should be running\.$/) do
 #sleep 10
   ms.click_sliders
   #sleep 10
-MobiClick.swipe("sdf")
+#MobiClick.swipe("sdf")
   #sleep 10
 
 
