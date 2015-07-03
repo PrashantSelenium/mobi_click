@@ -73,6 +73,5 @@ module MobiClick
 
     end
 
-
   end
 end
