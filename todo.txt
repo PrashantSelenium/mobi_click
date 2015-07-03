@@ -6,7 +6,6 @@ app for text field methods
 table rows and columns- inprogress
 add scroll_to methods
 
-code documentation
 click dynamic text - inprogress
 verify if dynamic text exists- inprogress
 collection methods- inprogress
